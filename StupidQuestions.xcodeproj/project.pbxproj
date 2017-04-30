@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79102E7616C7D9CEE2C9A477 /* Pods_StupidQuestions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC9BCF7CEE63D74EE77E0B0 /* Pods_StupidQuestions.framework */; };
 		F8B7120F1E964E2B00B907E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7120E1E964E2B00B907E4 /* AppDelegate.swift */; };
 		F8B712111E964E2B00B907E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B712101E964E2B00B907E4 /* ViewController.swift */; };
 		F8B712141E964E2B00B907E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B712121E964E2B00B907E4 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		121EDD2A25167EE51E7B218D /* Pods-StupidQuestions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StupidQuestions.release.xcconfig"; path = "Pods/Target Support Files/Pods-StupidQuestions/Pods-StupidQuestions.release.xcconfig"; sourceTree = "<group>"; };
+		5BD73ECC59C06DF29F95AAE4 /* Pods-StupidQuestions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StupidQuestions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StupidQuestions/Pods-StupidQuestions.debug.xcconfig"; sourceTree = "<group>"; };
+		AFC9BCF7CEE63D74EE77E0B0 /* Pods_StupidQuestions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StupidQuestions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B7120B1E964E2A00B907E4 /* StupidQuestions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StupidQuestions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B7120E1E964E2B00B907E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B712101E964E2B00B907E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,93 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79102E7616C7D9CEE2C9A477 /* Pods_StupidQuestions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		854E4151630425DDC95E96D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFC9BCF7CEE63D74EE77E0B0 /* Pods_StupidQuestions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CBD1C171EB5C2FC002BC826 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		8CBD1C181EB5C2FC002BC826 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8CBD1C191EB5C2FC002BC826 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8CBD1C1A1EB5C2FC002BC826 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CBD1C1B1EB5C2FC002BC826 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8CBD1C1C1EB5C2FC002BC826 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8CBD1C1D1EB5C2FC002BC826 /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		8CBD1C1E1EB5C2FC002BC826 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E8ADCD6A6DDA6DAB2DB2CAB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BD73ECC59C06DF29F95AAE4 /* Pods-StupidQuestions.debug.xcconfig */,
+				121EDD2A25167EE51E7B218D /* Pods-StupidQuestions.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F8B712021E964E2A00B907E4 = {
 			isa = PBXGroup;
 			children = (
 				F8B7120D1E964E2A00B907E4 /* StupidQuestions */,
 				F8B7120C1E964E2A00B907E4 /* Products */,
+				E8ADCD6A6DDA6DAB2DB2CAB0 /* Pods */,
+				854E4151630425DDC95E96D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +134,20 @@
 		F8B7120D1E964E2A00B907E4 /* StupidQuestions */ = {
 			isa = PBXGroup;
 			children = (
-				F8B7120E1E964E2B00B907E4 /* AppDelegate.swift */,
+				8CBD1C171EB5C2FC002BC826 /* DataStore */,
+				8CBD1C181EB5C2FC002BC826 /* Extensions */,
+				8CBD1C191EB5C2FC002BC826 /* Helpers */,
+				8CBD1C1A1EB5C2FC002BC826 /* Models */,
+				8CBD1C1B1EB5C2FC002BC826 /* Services */,
+				8CBD1C1C1EB5C2FC002BC826 /* Storyboards */,
+				8CBD1C1E1EB5C2FC002BC826 /* ViewControllers */,
+				8CBD1C1D1EB5C2FC002BC826 /* SupportedFiles */,
 				F8B712101E964E2B00B907E4 /* ViewController.swift */,
+				F8B712171E964E2B00B907E4 /* LaunchScreen.storyboard */,
 				F8B712121E964E2B00B907E4 /* Main.storyboard */,
 				F8B712151E964E2B00B907E4 /* Assets.xcassets */,
-				F8B712171E964E2B00B907E4 /* LaunchScreen.storyboard */,
 				F8B7121A1E964E2B00B907E4 /* Info.plist */,
+				F8B7120E1E964E2B00B907E4 /* AppDelegate.swift */,
 			);
 			path = StupidQuestions;
 			sourceTree = "<group>";
@@ -71,9 +159,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8B7121D1E964E2B00B907E4 /* Build configuration list for PBXNativeTarget "StupidQuestions" */;
 			buildPhases = (
+				B7F31B8EDD15DB876D14BE7A /* [CP] Check Pods Manifest.lock */,
 				F8B712071E964E2A00B907E4 /* Sources */,
 				F8B712081E964E2A00B907E4 /* Frameworks */,
 				F8B712091E964E2A00B907E4 /* Resources */,
+				DF1C558020CD5EE65C18AB26 /* [CP] Embed Pods Frameworks */,
+				8ED4BDCB81DA33511842BE91 /* [CP] Copy Pods Resources */,
+				8CBD1C1F1EB5CBCE002BC826 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +223,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CBD1C1F1EB5CBCE002BC826 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		8ED4BDCB81DA33511842BE91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StupidQuestions/Pods-StupidQuestions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7F31B8EDD15DB876D14BE7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF1C558020CD5EE65C18AB26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StupidQuestions/Pods-StupidQuestions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8B712071E964E2A00B907E4 /* Sources */ = {
@@ -259,6 +412,7 @@
 		};
 		F8B7121E1E964E2B00B907E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD73ECC59C06DF29F95AAE4 /* Pods-StupidQuestions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z4ZNZ62PTW;
@@ -272,6 +426,7 @@
 		};
 		F8B7121F1E964E2B00B907E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 121EDD2A25167EE51E7B218D /* Pods-StupidQuestions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z4ZNZ62PTW;
@@ -302,6 +457,7 @@
 				F8B7121F1E964E2B00B907E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
